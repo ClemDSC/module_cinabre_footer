@@ -1,0 +1,290 @@
+:root {
+    --blue-navy: rgb(22,25,51);
+    --soft-grey: rgb(244,244,244);
+    --text-grey: #ffffff;
+}
+
+footer#footer{
+    background: var(--soft-grey);
+    padding: 20px 0;
+}
+
+#footer #footer-klorel a{
+    text-decoration: none;
+    color: var(--blue-navy);
+}
+
+#footer #footer-klorel a{
+    position: relative;
+    width: fit-content;
+}
+
+#footer #footer-klorel .footer-klorel-div-info a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--blue-navy);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#footer #footer-klorel .footer-klorel-div-info a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#footer #footer-klorel p, #footer #footer-klorel span{
+    color: var(--blue-navy);
+    margin: 0;
+}
+
+/* newsletter */
+
+#footer-klorel-newsletter #blockEmailSubscription_footer{
+    background-image: none!important;
+}
+
+#footer-klorel-newsletter #blockEmailSubscription_leftcolumn{
+    background-image: none!important;
+}
+
+#footer-klorel-newsletter .block_newsletter{
+    padding: 0;
+}
+
+#footer-klorel-newsletter .club-cinabre-form{
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#footer-klorel-newsletter .club-cinabre-titre-container{
+    display: none;
+}
+
+#footer-klorel-newsletter .club-cinabre-text-container{
+    display: none;
+}
+
+#footer-klorel-newsletter .club-cinabre-first-input, #footer-klorel-newsletter .club-cinabre-second-input{
+    display: none;
+}
+
+#footer-klorel-newsletter{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.club-cinabre-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-klorel-newsletter .block_newsletter form{
+    /*
+    flex-direction: row;
+    */
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 8px 0;
+}
+
+#footer-klorel-newsletter .club-cinabre-footer-title{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+#footer-klorel-newsletter .block_newsletter form input[type=email].club-cinabre-email-input{
+    border-bottom: none;
+    min-width: 0px;
+    text-indent: 0px;
+}
+
+#footer-klorel-newsletter .block_newsletter form input[type=submit]{
+    margin: 0;
+    background-image: url(/themes/cinabrev3/assets/css/img/arrow-footer.png);
+    margin: 0 0 3px 0;
+}
+
+#footer-klorel-newsletter input::placeholder {
+    color: black;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+#footer-klorel-newsletter .newsletter-util-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* reseaux sociaux*/
+
+.footer-klorel-social{
+    width: 60%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+}
+
+/* credits */
+.footer-klorel-bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-klorel-bottom-container img{
+    width: 150px;
+    padding: 32px 0;
+}
+
+/* menu mobile toggle */
+
+.toggle-footer-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.klorel-footer-colum{
+    border-bottom: 1px solid black;
+    padding: 12px 24px;
+}
+
+.klorel-footer-colum.klorel-footer-colum1{
+    border-top: 1px solid black;
+}
+
+.chevron-img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Ajouter une transition pour l'animation */
+}
+
+.chevron-img.rotated {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease; /* Ajouter une transition pour l'animation */
+}
+
+.toggle-footer-mobile p, .toggle-footer-mobile a{
+    font-size: 18px;
+}
+
+.toggle-footer-content{
+    padding-top: 12px;
+}
+
+.toggle-footer-content p, .toggle-footer-content a{
+    padding-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    div.klorel-footer-colum1 div,
+    div.klorel-footer-colum2 div,
+    div.klorel-footer-colum3 div,
+    div.klorel-footer-colum4 div {
+        display: flex!important;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px){
+    .footer-klorel-main-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer-klorel-div-info{
+        display: flex;
+        width: 100%;
+    }
+
+    .chevron-img{
+        display: none;
+    }
+
+    .klorel-footer-colum{
+        border-bottom: none;
+        width: 25%;
+        padding: 10px 24px;
+    }
+
+    .klorel-footer-colum.klorel-footer-colum1{
+        border-top: none;
+    }
+
+    #footer-klorel-newsletter .block_newsletter, #footer-klorel-newsletter .club-cinabre-form{
+        min-height: 0;
+    }
+
+    #footer-klorel-newsletter{
+        width: 100%;
+    }
+
+    .toggle-footer-mobile{
+        align-items: flex-start;
+    }
+
+    .toggle-footer-content{
+        padding-top: 16px;
+    }
+
+    .toggle-footer-content p{
+        margin-bottom: 12px;
+    }
+
+    .toggle-footer-content a{
+        padding-bottom: .2rem;
+    }
+
+    .toggle-footer-content p {
+        font-size: 12px;
+    }
+
+    #footer-klorel-newsletter .club-cinabre-footer-title{
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    .toggle-footer-mobile p, .toggle-footer-mobile a{
+        font-size: 14px;
+    }
+
+    .block_newsletter form input[type=email].club-cinabre-email-input{
+        font-size: 12px;
+    }
+
+    #footer-klorel-newsletter .block_newsletter form{
+        padding: 0;
+    }
+
+    #footer-klorel-newsletter .block_newsletter form input[type=email]:focus{
+        border-bottom: none;
+    }
+
+    .footer-klorel-social{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+/* debug ancien css */
+
+@media (min-width: 1200px){
+    #category #footer .container{
+        width: 1140px;
+    }
+}
